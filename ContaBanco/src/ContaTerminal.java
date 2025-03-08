@@ -1,10 +1,21 @@
+import java.util.Scanner;
+
 public class ContaTerminal {
-    short numero;
-    String agencia;
-    String nomeCliente;
-    double saldo;
 
      public static void main(String[] args) {
-        System.out.println("Inicio do programa...");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Insira o número da conta: ");
+        short numero = sc.nextShort();
+
+        System.out.println("Insira a agencia da conta: ");
+        String agencia = sc.nextLine();
+
+        System.out.println("Insira seu nome: ");
+        String nomeCliente = sc.nextLine();
+
+        System.out.println("Insira seu saldo: ");
+        double saldo = sc.nextDouble();
+
+        
      }
 }
